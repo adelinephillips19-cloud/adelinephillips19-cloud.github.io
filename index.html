@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Google 广告代投服务 - AI驱动，ROAS提升300%+</title>
+    <meta name="description" content="专注 B2B 获客与电商出海。利用 2026 最新 AI 驱动策略与 PMax 全渠道优化，为您打造高转化 Google Ads 账户。">
+    <meta name="keywords" content="Google Ads Management 2026, AI-Driven PPC Agency, ROAS Optimization, PMax Specialist">
+    <style>
+        :root {
+            --primary-color: #1a73e8;
+            --secondary-color: #0d47a1;
+            --accent-color: #34a853;
+            --text-dark: #202124;
+            --text-light: #5f6368;
+            --bg-light: #f8f9fa;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--white);
+        }
+
+        /* Header */
+        header {
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary-color);
+            letter-spacing: -1px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            margin-left: 30px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 100px 5% 80px;
+            text-align: center;
+            background: radial-gradient(circle at top right, #e8f0fe, #ffffff);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: var(--text-light);
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 18px 36px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(26, 115, 232, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(26, 115, 232, 0.4);
+        }
+
+        /* Pain Points */
+        .pain-points {
+            padding: 80px 5%;
+            background-color: var(--bg-light);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .card {
+            padding: 40px;
+            border-radius: 12px;
+            background: white;
+        }
+
+        .card.bad { border-top: 4px solid #ea4335; }
+        .card.good { border-top: 4px solid var(--accent-color); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+
+        .card h3 { margin-bottom: 20px; }
+        .card ul { list-style: none; }
+        .card ul li { margin-bottom: 12px; display: flex; align-items: center; }
+        .card ul li::before { content: "✕"; color: #ea4335; margin-right: 10px; font-weight: bold; }
+        .card.good ul li::before { content: "✓"; color: var(--accent-color); }
+
+        /* Features */
+        .features {
+            padding: 80px 5%;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-item {
+            padding: 30px;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .feature-item:hover {
+            border-color: var(--primary-color);
+        }
+
+        .feature-icon {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        /* Social Proof */
+        .social-proof {
+            padding: 60px 5%;
+            text-align: center;
+            background-color: #001529;
+            color: white;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            margin-top: 40px;
+        }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: block;
+        }
+
+        /* Footer CTA */
+        .footer-cta {
+            padding: 100px 5%;
+            text-align: center;
+            background: linear-gradient(rgba(26, 115, 232, 0.05), rgba(26, 115, 232, 0.05));
+        }
+
+        footer {
+            padding: 40px 5%;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-light);
+            border-top: 1px solid #eee;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 32px; }
+            .comparison-grid { grid-template-columns: 1fr; }
+            .stats { flex-direction: column; gap: 40px; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">GROWTH ALPHA</div>
+        <nav class="nav-links">
+            <a href="#services">服务特色</a>
+            <a href="#cases">案例研究</a>
+            <a href="https://wa.me/your-number" class="cta-button" style="padding: 10px 20px; font-size: 14px;">专家咨询</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>别再浪费你的预算：<br>用 AI 驱动的 Google 广告策略，将 ROAS 提升 300%+</h1>
+        <p>专注 B2B 获客与电商出海。在 2026 年，我们不仅是代投，更是利用第一方数据与信号驱动的增长架构师。</p>
+        <a href="https://wa.me/your-number" class="cta-button">立即开启免费账户审计</a>
+    </section>
+
+    <section class="pain-points">
+        <div class="section-title">
+            <h2>揭秘代投行业的“潜规则”</h2>
+            <p>为什么你的广告费花出去了，却没有产生业绩？</p>
+        </div>
+        <div class="comparison-grid">
+            <div class="card bad">
+                <h3>传统代投机构</h3>
+                <ul>
+                    <li>只管点击量，不考核转化成本</li>
+                    <li>账户结构混乱，黑盒操作不透明</li>
+                    <li>依赖过时的关键词匹配模式</li>
+                    <li>沟通滞后，甚至找不到对接人</li>
+                </ul>
+            </div>
+            <div class="card good">
+                <h3>我们的 2026 增长模型</h3>
+                <ul>
+                    <li>以最终利润和 ROAS 为核心指标</li>
+                    <li>24/7 实时看板，每一分钱清晰可见</li>
+                    <li>信号驱动 (Signal-Led) 与第一方数据集成</li>
+                    <li>专家级 PMax 全渠道深度优化</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="features">
+        <div class="section-title">
+            <h2>2026 年领先的广告技术</h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon">🚀</div>
+                <h3>信号领航 (Signal-Led)</h3>
+                <p>利用第一方数据集成，精准捕捉高意向客户，而非死磕关键词。在“无关键词搜索”趋势中抢占先机。</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🎨</div>
+                <h3>创意自动化</h3>
+                <p>针对 PMax 全渠道自动生成并迭代高点击率的视频与图片素材，让算法更懂你的受众。</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📊</div>
+                <h3>全透明数据看板</h3>
+                <p>拒绝 PDF 月报。提供 2026 新版实时数据接入，随时掌握账户表现与信号衰减情况。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-proof">
+        <h2>Google Premier Partner 2026 官方认证</h2>
+        <p>已帮助 500+ 出海企业实现规模化增长</p>
+        <div class="stats">
+            <div>
+                <span class="stat-number">1.2亿+</span>
+                <span>年度管理预算 ($)</span>
+            </div>
+            <div>
+                <span class="stat-number">340%</span>
+                <span>平均 ROAS 提升</span>
+            </div>
+            <div>
+                <span class="stat-number">24h</span>
+                <span>响应式专家支持</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-cta">
+        <h2>准备好在下个季度实现爆发式增长了吗？</h2>
+        <p style="margin-bottom: 30px; color: var(--text-light);">不要让无效投放吞噬您的利润。现在预约 15 分钟免费增长会议。</p>
+        <a href="https://wa.me/your-number" class="cta-button" style="background-color: var(--accent-color);">与资深专家在线沟通</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Growth Alpha Marketing Agency. All Rights Reserved.</p>
+        <p>Google Ads Management 2026 | B2B Lead Gen | E-commerce Scaling</p>
+    </footer>
+
+</body>
+</html>
